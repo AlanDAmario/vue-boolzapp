@@ -1,0 +1,131 @@
+/* **** RESPONSIVE-DEKSTOP***** */
+
+@media screen and (min-width: 960px) {
+    .container {
+        width: 80%;
+        height: 90%;
+        margin: auto;
+    }
+
+    .side-bar {
+        width: 350px;
+    }
+
+    .side-bar .col-card {
+        width: 100%;
+    }
+
+    .notifications-bar {
+        display: block;
+    }
+
+    .search-bar {
+        display: block;
+    }
+
+    /*********** SIDE-BAR CONTENT ************/
+
+    .side-bar-content {
+        width: 100%;
+    }
+
+    .side-bar .fontawesome-header {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    .notifications-bar {
+        background-color: #8FDAFC;
+        padding: 12px 8px;
+        width: 100%;
+        display: flex;
+    }
+
+    .notifications-bar i {
+        color: #8FDAFC;
+        padding: 15px;
+        background-color: white;
+        border-radius: 50%;
+        font-size: 18px;
+        padding: 17px;
+    }
+
+    .notifications-bar i:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+    /*********** BELL ICON ***********/
+    .bell-icon {
+        width: 30%;
+    }
+
+    .notifications-text {
+        width: 100%;
+    }
+
+    .bell-txt {
+        width: 100%;
+        align-items: start;
+        padding-top: 5px;
+        gap: 5px;
+    }
+
+    .bell-txt p {
+        font-size: 13px;
+        color: var(--access-color);
+    }
+
+    /* ********** SEARCH BAR************** */
+    .mgnfy-glass {
+        color: var(--access-color);
+    }
+
+    .search-bar {
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        background-color: #FAFAFA;
+        height: 45.33px;
+    }
+
+    .search {
+        padding: 5px 58px;
+        border: none;
+    }
+
+    /* *****FRIEND-LIST**** */
+    .friend-txt {
+        justify-content: center;
+        gap: 2px;
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .friend-txt p:last-child {
+        color: var(--access-color);
+        font-size: 14px;
+    }
+
+    .txt-time {
+        font-size: 12px;
+        justify-content: end;
+        width: 100%;
+        padding-right: 10px;
+        color: var(--access-color);
+        padding-top: 12px;
+    }
+
+    /* UTILITIES */
+    .d-flex {
+        display: flex;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+}

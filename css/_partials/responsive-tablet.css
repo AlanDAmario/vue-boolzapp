@@ -1,0 +1,92 @@
+/* ***RESPONSIVE TABLET**** */
+
+@media screen and (min-width: 768px) {
+    .side-bar {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        overflow: hidden;
+        width: 80px;
+    }
+
+    .side-bar .fontawesome-header {
+        display: none;
+    }
+
+    .notifications-bar {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .fontawesome-footer i {
+        display: block;
+    }
+
+    /**********FRIEND LIST**********  */
+    .friend-list {
+        overflow-y: auto;
+        justify-content: center;
+        flex-shrink: 1;
+    }
+
+
+    .friend-list li img {
+        width: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+
+    .friend-content {
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    .friend-content:hover {
+        background-color: lightcoral;
+        cursor: pointer;
+    }
+
+    .friend-txt {
+        display: none;
+    }
+
+    .txt-time {
+        display: none;
+    }
+
+    .fontawesome-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fontawesome-footer i {
+        color: var(--access-color);
+        font-size: 20px;
+    }
+
+    .fontawesome-footer .smile-font {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    .fontawesome-footer .mic-font {
+        padding-left: 10px;
+        padding-right: 15px;
+    }
+
+    .smile-font>i:hover {
+        color: chocolate;
+        cursor: grab;
+
+    }
+
+    .mic-font>i:hover {
+        color: rgb(57, 184, 11);
+        cursor: pointer;
+    }
+}

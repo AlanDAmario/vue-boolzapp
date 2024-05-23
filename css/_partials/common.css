@@ -1,0 +1,174 @@
+/* ****LAYOUT*** */
+
+body{
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    /* PER IL BG BODY BASTA ASSEGNARE LA MEDESIMA PERCENTUALE PER IL RISULTATO DESIDERATO, MA A ME PIACE QUESTO :) */
+    background: linear-gradient(#009588 20%, #DBDAD3 50%)
+}
+
+header{
+    background-color: var(--bg-header);
+    height: 80px;
+    flex-shrink: 1;
+    display: flex;
+}
+
+footer{
+    background-color: var(--bg-header);
+    height: 80px;
+    flex-shrink: 1;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+}
+
+.side-bar{
+    display: none;
+}
+.chat{
+    height: calc(100% - 160px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;
+    padding: 80px;
+    background-image: url(/img/mine.jpg);
+}
+.content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/************* CONTENUTO LAYOUT******* */
+
+/* HEADER RIGHT SECTION */
+.col-card{
+    width: 100px;
+    display: flex;
+}
+
+.card img:hover{
+    cursor: pointer;
+}
+
+header .card img{
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+.col-text{
+    width: calc(100% - 100px);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.text-card{
+    font-size: var(--font-name);
+    font-weight: bold;
+}
+.text-card:hover{
+    cursor: pointer;
+}
+
+.last-access{
+    color: var(--access-color);
+    font-size: var(--font-access);
+}
+
+.fontawesome-header{
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.fontawesome-header>i{
+    font-size: 15px;
+    color: var(--access-color);
+}
+
+.fontawesome-header>i:hover{
+    cursor: pointer;
+}
+
+/* CHAT LIST */
+
+.chat-user, .chat-friend{
+    border-radius: 20px;
+    margin: 40px 0;
+    padding: 20px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.chat-user{
+    background-color: #D4F9BB;
+    margin-left: 60px;
+}
+
+.chat-friend{
+    background-color: white;
+    margin-right: 60px;
+}
+
+.show-more{
+    justify-content: center;
+    align-items: end;
+}
+.show-more p{
+    padding-top: 50px;
+    color: var(--access-color);
+    font-size: 10px
+}
+
+.show-more>i:hover{
+    color: red;
+    cursor: wait;
+}
+
+/* FOOTER */
+
+.fontawesome-footer i{
+    display: none;
+}
+
+.fontawesome-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.message-bar{
+    width: 100%;
+    padding: 10px;
+}
+.message-bar input{
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* **Utilities */
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.column{
+    flex-direction: column;
+}
