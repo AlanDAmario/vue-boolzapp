@@ -51,14 +51,14 @@
         </div>
       </div>
       <ul class="friend-list">
-        <li>
+        <li v-for="(contact, index) in contacts" :key="index" @click="setContactActive(index)">
           <div class="friend-content d-flex">
             <div class="friend-img">
-              <img src="./img/avatar_3.jpg" alt="img">
+              <img :src="contact.avatar" :alt="contact.name">
             </div>
             <div class="friend-txt d-flex column">
               <div class="name">
-                <h3>Chief</h3>
+                <h3>{{contact.name}}</h3>
               </div>
               <div class="stats">
                 <p>Lorem ipsilum...</p>
@@ -69,259 +69,6 @@
             </div>
           </div>
         </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_4.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_5.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_6.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_1.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_4.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_2.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_3.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_4.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_5.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_6.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_1.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_4.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_2.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="friend-content d-flex">
-            <div class="friend-img">
-              <img src="./img/avatar_3.jpg" alt="img">
-            </div>
-            <div class="friend-txt d-flex column">
-              <div class="name">
-                <h3>Chief</h3>
-              </div>
-              <div class="stats">
-                <p>Lorem ipsilum...</p>
-              </div>
-            </div>
-            <div class="txt-time d-flex">
-              <p> 15:12</p>
-            </div>
-          </div>
-        </li>
-
       </ul>
 
     </div>
@@ -330,15 +77,15 @@
       <header>
         <div class="col-card">
           <div class="card">
-            <img src="./img/avatar_1.jpg" alt="png">
+            <img :src="getActiveContact().avatar" :alt="getActiveContact().name">
           </div>
         </div>
         <div class="col-text">
           <div class="text-card">
-            <span>Michele</span>
+            <span>{{getActiveContact().name}}</span>
           </div>
           <div class="last-access">
-            <span>Ultimo accesso oggi alle ore 16:32</span>
+            <span>{{getActiveContact().date}}</span>
           </div>
         </div>
         <div class="fontawesome-header">
@@ -348,23 +95,12 @@
         </div>
       </header>
       <div class="chat">
-        <div class="chat-user d-flex">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nemo neque libero numquam eum voluptates
-            excepturi tenetur recusandae. Laborum placeat culpa quibusdam aperiam! Natus harum quis id facilis,
-            doloribus velit.</p>
+        <div v-for="(message,index) in getActiveContact().messages" :key="index" :class="getMessageClass(message)"
+          class="d-flex">
+          <p>{{message.message}}</p>
           <div class="show-more d-flex column">
             <i class="fas fa-angle-down"></i>
-            <p>16:15</p>
-          </div>
-        </div>
-        <div class="chat-friend d-flex">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing espant. Dolorem maxime numquam id. Aut officiis
-            doloribus qui suscipit voluptates odio vel dignissimos veritatis. Odit praesentium labore modi accusamus
-            soluta iusto hic.</p>
-          <div class="show-more d-flex column">
-            <i class="fas fa-angle-down"></i>
-            <p>16:15</p>
-
+            <p>{{message.date}}</p>
           </div>
         </div>
       </div>
