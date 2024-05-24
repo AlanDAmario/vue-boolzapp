@@ -20,6 +20,9 @@
             <img src="./img/avatar_2.jpg" alt="png">
           </div>
           <div class="col-text">
+            <div class="text-card">
+              <p>Gaetano</p>
+            </div>
           </div>
           <div class="fontawesome-header d-flex">
             <i class="fas fa-magnifying-glass"></i>
@@ -110,7 +113,7 @@
             <i class="fas fa-poo"></i>
           </div>
           <div class="message-bar">
-            <input type="text" name="Scrivi messaggio" id="msg" placeholder="Scrivi un messaggio">
+            <input type="text" v-model="newMessage" @keyup.enter="addMessage" placeholder="Scrivi un messaggio">
           </div>
           <div class="mic-font">
             <i class="fas fa-microphone-lines"></i>

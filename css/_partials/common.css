@@ -115,7 +115,8 @@ header .card img {
     width: fit-content;
 }
 
-.chat-user {
+.chat-user,
+.green-message {
     background-color: #D4F9BB;
     margin-left: auto;
 }
